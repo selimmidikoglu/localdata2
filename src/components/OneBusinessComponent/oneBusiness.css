@@ -1,0 +1,21 @@
+.info-label {
+    color:white;
+    font-family: "Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+    width: 100%;
+    border:1px solid red;
+    
+}
+.info-key {
+    color:orange;
+    font-family: "Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+}
+.nothing{
+    background-color: blue;
+    margin: 40px
+}
+.different {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    
+}

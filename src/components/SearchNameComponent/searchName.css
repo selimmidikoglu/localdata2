@@ -1,0 +1,123 @@
+.search-container-name{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(26, 43, 66, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    /* margin: auto auto; */
+    transition: margin 700ms;
+}
+.search-box-name{
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: white;
+    height: 40px;
+    padding-left: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    
+}
+.search-container-name:focus{
+    margin:0 auto;
+}
+
+.back-to-filter{
+    position:fixed;
+    top: 20%;
+    left:0;
+    
+    background-color: rgba(26, 43, 66,0.6);
+    max-width:130px;
+    font-size: 30;
+    padding:10px;
+    color:var(--green-mid);
+    font-weight: 600;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    border-left: 5px solid var(--green-mid);
+    transition: min-width 0.6s;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+.back-to-filter:hover{
+    text-shadow: 1px 1px 2px gray;
+    background-color: var(--darak-gray);
+    min-width: 130px;
+    cursor: pointer;
+    
+}
+.name-location-filter{
+    position:fixed;
+    top:80px;
+    right:10px;
+    background-color: rgba(26, 43, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:10px;
+    font-family: 'Nunito', sans-serif;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-width: 200px;
+    max-height:900px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    
+}
+.name-location-main-header{
+    font-size:17px;
+    color:white;
+    border-bottom:1px solid var(--green-mid);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+
+}
+.locations-states-container{
+    width: 100%;
+    overflow: auto;
+    animation-duration: 300ms;
+    max-height: 300px;
+}
+.locations-states-container::-webkit-scrollbar {
+    width: 5px;
+}
+.locations-state-el{
+    color:white;
+    margin-right:0px;
+    padding:5px 5px;
+    font-size: 14px;
+    cursor:pointer;
+    border-radius: 5px;
+
+}
+.locations-state-el:hover{
+    color:var(--darak-gray);
+    font-weight: 900;
+    font-size: 15px;
+    background-color:var(--green-mid);
+
+}   
+.locations-state-el-choosen{
+    color:var(--darak-gray);
+    font-weight: 900;
+    font-size: 15px;
+    background-color:var(--green-mid);
+    padding:5px 5px;
+    border-radius: 5px;
+    cursor:pointer;
+}  
