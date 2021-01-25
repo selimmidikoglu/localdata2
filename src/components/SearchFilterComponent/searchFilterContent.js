@@ -16,8 +16,7 @@ import { MdLocationCity } from "react-icons/md";
 import { CgWebsite, CgChevronDown, CgCloseO } from "react-icons/cg";
 import Highlighter from "react-highlight-words";
 import Pagination from '../Pagination/pagination';
-const mainURL = "http://localhost:3000/"
-
+import {urls} from '../../constants'
 export default props => {
     //EFFECTS
     const dispatch = useDispatch();
@@ -261,8 +260,8 @@ export default props => {
                         (bus) => (
                             <div className="single-business-card" onClick={
                                 () => {
-                                    console.log(mainURL + 'biz/' + bus.name.split(" ").join("-") + "/" + bus.city.split(" ").join("-") + "/" + bus.state + "/" + bus.id)
-                                    let openURL = mainURL + 'biz/' + bus.name.split(" ").join("-") + "/" + bus.city.split(" ").join("-") + "/" + bus.state + "/" + bus.id
+                                    console.log(urls.local + 'biz/' + bus.name.split(" ").join("-") + "/" + bus.city.split(" ").join("-") + "/" + bus.state + "/" + bus.id)
+                                    let openURL = urls.local + 'biz/' + bus.name.split(" ").join("-") + "/" + bus.city.split(" ").join("-") + "/" + bus.state + "/" + bus.id
                                     var win = window.open(openURL)
                                     setTimeout(() => win.focus(), 400)
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux';
-import BG from './ny.jpeg'
+// import BG from './ny.jpeg'
 import './Home.css'
 import { Animated } from "react-animated-css";
 //REDUX
@@ -14,7 +14,7 @@ export default props => {
     return (
         <>
             <div className="myDiv" >
-                <img className="bg" src={BG} />
+                <img className="bg" src="./ny.jpeg" />
             </div>
             <div className="main-container">
                 <Navigation></Navigation>

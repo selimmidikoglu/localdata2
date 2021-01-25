@@ -13,9 +13,10 @@ import { IoLogoFacebook, IoLogoTwitter } from "react-icons/io";
 import { MdLocationCity } from "react-icons/md";
 import { CgWebsite, CgChevronDown, CgCloseO } from "react-icons/cg";
 //------------------------------------------------------------
+import {urls} from '../../constants'
 import './searchName.css'
 import { debounce } from 'lodash'
-const mainURL = "http://localhost:3000/"
+
 export default function SearchName() {
     //EFFECTS
     const dispatch = useDispatch();
@@ -50,10 +51,10 @@ export default function SearchName() {
                         (bus) => (
                             <div className="single-business-card" onClick={
                                 () => {
-                                    console.log(mainURL + 'biz/' + bus.name.split(" ").join("-") + "/" + bus.city.split(" ").join("-") + "/" + bus.state + "/" + bus.id)
-                                    let openURL = mainURL + 'biz/' + bus.name.split(" ").join("-") + "/" + bus.city.split(" ").join("-") + "/" + bus.state + "/" + bus.id
+                                    console.log(urls.local + 'biz/' + bus.name.split(" ").join("-") + "/" + bus.city.split(" ").join("-") + "/" + bus.state + "/" + bus.id)
+                                    let openURL = urls.local + 'biz/' + bus.name.split(" ").join("-") + "/" + bus.city.split(" ").join("-") + "/" + bus.state + "/" + bus.id
                                     var win = window.open(openURL)
-                                    setTimeout(() => win.focus(), 400)
+                                    setTimeout(() => win.focus(), 1000)
 
                                 }
 
